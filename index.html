@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>poznan - city2live</title>
     <!--fonts-->
-    
+    <link rel="stylesheet" href="font/font-face.css">
     <!--icon-->
     <link rel="shortcut icon" href="images/favicon.ico" type="images/x-icon">
     <!--adaptiv-->
@@ -19,20 +19,20 @@
 <body>
    <div class="wrapper">
        <div class="header">
-           <a href="#" class="logo"></a>
+           <div class="logo"><a href="#"></a></div>
            <div class="top-nav">
-               <div>home</div>
-               <div>product</div>
-               <div>services</div>
-               <div>contact</div>
+               <div><a href="#">home</a></div>
+               <div><a href="#">product</a></div>
+               <div><a href="#">services</a></div>
+               <div><a href="#">contact</a></div>
            </div>
            <div class="socialNetworck">
-               <a href="#"></a>
-               <a href="#"></a>
-               <a href="#"></a>
-               <a href="#"></a>
-               <a href="#"></a>
-               <a href="#"></a>
+               <div><a href="#"></a></div>
+               <div><a href="#"></a></div>
+               <div><a href="#"></a></div>
+               <div><a href="#"></a></div>
+               <div><a href="#"></a></div>
+               <div><a href="#"></a></div>
            </div>
        </div>
        <div class="banner">
@@ -43,23 +43,25 @@
                <p>a city on the <span>warta</span> river in west-central <span>poland</span>, the region called <span>greater poland.</span></p>
            </div>
            <div class="people">
-               <div>
-                   <span>I was in Poznan once. The architecture is really awesome.</span>
-                   <span class="peoplesName">Joe Wisdom, architect</span>
-                </div>
-               <div>
-                   <span>I was lost in Poznan for 3 days. I was terrified.</span>
-                   <span class="peoplesName">Little Box, child</span>
+                <div class="wrappPeople">          
+                   <div class="peopleComment">
+                       <div>I was in Poznan once. The architecture is really awesome.</div>
+                       <span class="peoplesName">Joe Wisdom, architect</span>
+                    </div>
+                   <div class="peopleComment">
+                       <div>I was lost in Poznan for 3 days. I was terrified.</div>
+                       <span class="peoplesName">Little Box, child</span>
+                   </div>
+                   <div class="peopleComment">
+                       <div>People used to look at me now they don’t see me.</div>
+                       <span class="peoplesName">Eva Doe, exmodel</span>
+                   </div>
+                   <div class="peopleComment">
+                       <div>I have a lot of penfriends in Poznań. I like writting to them and ...</div>
+                       <span class="peoplesName">Emma Smith, child</span>
+                   </div>
                </div>
-               <div>
-                   <span>People used to look at me now they don’t see me.</span>
-                   <span class="peoplesName">Eva Doe, exmodel</span>
-               </div>
-               <div>
-                   <span>I have a lot of penfriends in Poznań. I like writting to them and ...</span>
-                   <span class="peoplesName">Emma Smith, child</span>
-               </div>
-           </div>
+            </div>           
        </div>
        <div class="main">
            <div class="sidebar">
@@ -67,7 +69,7 @@
                    <h4>about author</h4>
                    <p><span>John Doe </span> - lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta.</p>
                </div>
-               <div class="related posts">
+               <div class="relatedPosts">
                    <h4>related posts</h4>
                    <div class="post">
                        <div class="postImg1">
@@ -92,21 +94,47 @@
                    </div>
                </div>
                <div class="currency">
-
+                   <h4>currency</h4>
+                   <div class="str0">
+                       <div>Date</div>
+                       <div>Value</div>
+                       <div>Status</div>
+                       <div>Diff</div>
+                   </div>
+                   <div class="str1">
+                       <div>22.1</div>
+                       <div>459.5</div>
+                       <div class="str13"></div>
+                       <div>+1.0</div>
+                   </div>
+                   <div class="str2">
+                       <div>21.1</div>
+                       <div>448.5</div>
+                       <div class="str23"></div>
+                       <div>-2.3</div>
+                   </div>
+                   <div class="str3">
+                       <div>20.1</div>
+                       <div>450.8</div>
+                       <div class="str33"></div>
+                       <div>+8.0</div>
+                   </div>
                </div>
            </div>
            <div class="content">
                <div class="comeToPoznan">
                    <h2>WHY SHOULD YOU COME TO POZNAN</h2>
                    <div class="date">11 Now 2013</div>
-                   <div class="user">by John Doe</div>
+                   <div class="user">by<br> John Doe</div>
                    <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio  em nec elit. Sed posuere 
 consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec  ullamcorper nulla non metus auctor fringilla. 
 Nulla vitae elit libero, a pharetra augue. Donec  ullamcorper nulla non metus auctor fringilla... </p>
                   <span class="readMore">read more</span>
-                  <div class="likes/comments">
-                      <span>10 likes</span>
-                      <span>22 comments</span>
+                  <div class="likCom">
+                      <div class="likCom2">
+                          <span>10 likes</span>
+                          <span>22 comments</span>
+                      </div>  
                   </div>
                </div>
                <div class="articles">
@@ -135,27 +163,27 @@ Sed posuere consectetur est at lobortis.eget lacinia...</p>
                             <span class="articleComents">55</span>
                         </div>
                     </div>
-                    <div class="yourAdHere">
-                        <a href="#">your ad here</a>
-                    </div>
+               </div>
+               <div class="yourAdHere">
+                    <a href="#">your ad here</a>
                </div>
            </div>
        </div>   
        <div class="map">
            <h3>where can i find more information</h3>
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.134791213265!2d16.936073915253267!3d52.428438145374734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045ca8d69d0109%3A0xd9f9d9e3537fa885!2zTXVyYXdhLCBQb3puYcWELCDQn9C-0LvRjNGJ0LA!5e0!3m2!1suk!2sua!4v1503436006046" width="1020" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.134791213265!2d16.936073915253267!3d52.428438145374734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045ca8d69d0109%3A0xd9f9d9e3537fa885!2zTXVyYXdhLCBQb3puYcWELCDQn9C-0LvRjNGJ0LA!5e0!3m2!1suk!2sua!4v1503436006046" width="100%" height="200" frameborder="0" allowfullscreen></iframe>
        </div>
-       <div class="fotter">
+       <div class="footer">
            <div class="footerNav">
-               <div class="footerlogo"></div>
-               <div class="footernav">
-                   <a href="#">home</a>
-                   <a href="#">product</a>
-                   <a href="#">services</a>
-                   <a href="#">contact</a>
+               <div class="footerlogo"><a href="#"></a></div>
+               <div class="footernav2">
+                   <div><a href="#">home</a></div>
+                   <div><a href="#">product</a></div>
+                   <div><a href="#">services</a></div>
+                   <div><a href="#">contact</a></div>
                </div>
            </div>
-           <span>all rights reserved 2013</span>
+           <span class="rightsReserved">all rights reserved 2013</span>
        </div>
    </div>
 </body>

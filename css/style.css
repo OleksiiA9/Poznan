@@ -1,0 +1,863 @@
+/*reset styles*/
+html {-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section { display: block; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+img {
+	border-style:none;
+	max-width:100%;
+}
+a {text-decoration:none;}
+a:hover {text-decoration:none;}
+input, textarea, select {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	vertical-align:middle;
+	color:#000;
+	padding:0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+form fieldset {
+	margin:0;
+	padding:0;
+	border:none;
+}
+ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+*:focus {outline: none;}
+input::-webkit-input-placeholder{color:#bebebe;}
+input:focus::-webkit-input-placeholder{color:#bebebe;}
+/***************************************************              GENERAL STYLES             ***************************************************/
+h1 {font: 35px sans-serif;}
+h2 {font: 25px sans-serif;}
+h3 {font: 23px sans-serif;}
+h4 {font: 21px sans-serif;}
+h5 {font: 18px sans-serif;}
+h6 {font: 16px sans-serif;}
+
+.wrapper{
+    display: block;
+    width: 100%;
+    min-width: 1020px;
+    margin: 0 auto;
+    background: #fff;
+}
+.header{
+    display: block;
+    height: 89px;
+    width: 100%;
+    border-bottom: 2px solid #22aaec;
+    text-align: center;
+    position: relative;
+    padding-top: 16px;
+}
+.header .logo{
+    display: block;
+    overflow: hidden;
+    width: 171px;
+    height: 25px;
+    background-image: url(../images/logo-text.png);
+    margin:0 auto;
+}
+.header .logo a{
+    display: block;
+    overflow: hidden;
+    width: 171px;
+    height: 25px;
+}
+.header .socialNetworck{
+    position: absolute;
+    top: 16px;
+    right: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+.header .socialNetworck div{
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-left: 7px;
+}
+.header .socialNetworck div a{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.header .socialNetworck div:first-child{
+    background-image: url(../images/evernote.png);
+    margin-left: 0;
+    width: 14px;
+    height: 17px;
+}
+.header .socialNetworck div:nth-child(2){
+    background-image: url(../images/twitter.png);
+    height: 14px;
+}
+.header .socialNetworck div:nth-child(3){
+    background-image: url(../images/pinterest.png);
+}
+.header .socialNetworck div:nth-child(4){
+    background-image: url(../images/linked-in.png);
+}
+.header .socialNetworck div:nth-child(5){
+    background-image: url(../images/facebook.png);
+}
+.header .socialNetworck div:last-child{
+    background-image: url(../images/delicious.png);
+}
+.header .top-nav{
+    display: block;
+    margin-top: 17px;
+}
+.header .top-nav div{
+    display: inline-block;
+    margin: 0 25px;
+    padding: 6px 16px;
+}
+.header .top-nav div:hover{
+    padding: 4px 16px;
+    background: #076a9b;
+    border: solid 1px #045279;
+    border-radius: 1px;
+    margin: 0 24px;
+}
+.header .top-nav div a{
+    line-height: 22px;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #707070;
+}
+.header .top-nav div:hover a{
+    color: #fff;
+}
+.banner{
+    display: block;
+    background: url(../images/main-img.png) no-repeat center;
+    background-size:100% 100%;
+    padding: 91px 0;
+    position: relative;
+    border-bottom: 2px solid #22aaec;
+}
+.visitPoznan{
+    display: block;
+    width: 284px;
+    background: rgba(227, 217, 208, 0.7);
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 19px;
+}
+/*кастомный шрифт*/
+.visitPoznan h1{
+    text-transform: uppercase;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 60px;
+    color: #076e9f;
+}
+.visitPoznan h1 span{
+    color: #22aaec;
+}
+.aCity{
+    display: block;
+    width: 776px;
+    padding: 13px 0;
+    background: #d0d0ce;
+    background: rgba(227, 217, 208, 0.7);
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 77px;
+}
+.aCity p{
+    text-transform: uppercase;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 30px;
+    color: #076e9f;
+}
+.aCity p span{
+    color: #22aaec;
+}
+.people{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #000;
+    padding: 25px 0;
+    background: rgba(12, 11, 4, 0.3);
+    color: #fff;
+}
+.people .wrappPeople{
+    display: flex;
+    justify-content: space-between;
+    width: 910px;
+    height: 70px;
+    margin: 0 auto;
+}
+.people .wrappPeople .peopleComment{
+    width: 154px;
+    height: 70px;
+    background: #e8e8e7;
+    background: rgba(227, 217, 208, 0.7);
+    position: relative;
+}
+.people .wrappPeople .peopleComment:before{
+    position: absolute;
+    content: url('../images/person01.png');
+    top: 0;
+    left: -25%;
+    opacity: 1;    
+}
+.people .wrappPeople .peopleComment:nth-child(2):before{
+    content: url('../images/person02.png');
+}
+.people .wrappPeople .peopleComment:nth-child(3):before{
+    content: url('../images/person03.png');
+}
+.people .wrappPeople .peopleComment:last-child:before{
+    content: url('../images/person04.png');
+}
+.people .wrappPeople .peopleComment div{
+    color: #515151;
+    font-family: 'Arial', sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+    font-style: italic;
+    width: 92px;
+    margin-left: 50px;
+    margin-top: 7px;
+}
+.people .wrappPeople .peopleComment span{
+    color: #828282;
+    font-family: 'Arial', sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+    width: 92px;
+    margin-left: 50px;
+}
+.people .wrappPeople .peopleComment:last-child div{
+    width: 104px;
+    margin-left: 44px;
+}
+.people .wrappPeople .peopleComment:last-child span{
+    margin-left: 44px;
+}
+.main{
+    display: block;
+    overflow: hidden;
+    width: 960px;
+    /*pos*/
+    margin: 0 auto;
+}
+.main .sidebar{
+    display: block;
+    overflow: hidden;
+    width: 195px;
+    padding-left: 6px;
+    border-right: 1px dotted #d7d7d7; 
+    padding-bottom: 70px;
+}
+.main .sidebar .aboutAuthor{
+    display: block;
+    overflow:hidden;
+    padding-top: 33px;
+    padding-bottom: 17px;
+    border-bottom: 1px dotted #d7d7d7;
+}
+.main .sidebar .aboutAuthor h4{
+    color: #076e9f;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+.main .sidebar .aboutAuthor p{
+    color: #5c5c5c;
+    font-size: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+}
+.main .sidebar .aboutAuthor p span{
+    color: #076e9f;
+    font-size: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+}
+.main .sidebar .relatedPosts{
+    display: block;
+    overflow:hidden;
+    padding-top: 33px;
+    padding-bottom: 17px;
+    border-bottom: 1px dotted #d7d7d7;
+}
+.main .sidebar .relatedPosts h4{
+    color: #076e9f;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.main .sidebar .relatedPosts .post{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 11px;
+}
+.main .sidebar .relatedPosts .post:last-child{
+    margin-bottom: 0;
+}
+.main .sidebar .relatedPosts .post .postImg1{
+    float: left;
+    margin-right: 18px;
+    width: 50px;
+    height: 40px;
+    background-image: url(../images/image-post-1.png);
+}
+.main .sidebar .relatedPosts .post .postImg2{
+    float: left;
+    margin-right: 18px;
+    width: 50px;
+    height: 40px;
+    background-image: url(../images/image-post-2.png);
+}
+.main .sidebar .relatedPosts .post .postImg3{
+    float: left;
+    margin-right: 18px;
+    width: 50px;
+    height: 40px;
+    background-image: url(../images/image-post-3.png);
+}
+.main .sidebar .relatedPosts .post h5{
+    color: #5c5c5c;
+    font-size: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.main .sidebar .relatedPosts .post span{
+    color: #5c5c5c;
+    font-size: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    position: relative;
+    padding: 0 0 0 21px;
+}
+.main .sidebar .relatedPosts .post span:before{
+    position: absolute;
+    content: url('../images/speech-bubbles-copy-2.png');
+    top: 0;
+    left: 0;
+}
+.main .sidebar .currency{
+    display: block;
+    width: 160px;
+    margin-top: 23px;
+}
+.main .sidebar .currency h4{
+    color: #076e9f;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.main .sidebar .currency .str0, .main .sidebar .currency .str1, .main .sidebar .currency .str2, .main .sidebar .currency .str3{
+    width: 159px;
+    display: flex;
+    justify-content: space-between;
+}
+.main .sidebar .currency .str0 div{
+    display: block;
+    width: 39px;
+    height: 19px;
+    background: #076e9f;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    line-height: 19px;
+    font-weight: 400;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 1px;
+}
+.main .sidebar .currency .str1 div{
+    display: block;
+    width: 39px;
+    height: 19px;
+    background: #c7e9fa;
+    text-align: center;
+    color: #076e9f;
+    font-size: 10px;
+    line-height: 19px;
+    font-weight: 400;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 1px;
+}
+.main .sidebar .currency .str2 div{
+    display: block;
+    width: 39px;
+    height: 19px;
+    background: #c7e9fa;
+    text-align: center;
+    color: #076e9f;
+    font-size: 10px;
+    line-height: 19px;
+    font-weight: 400;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 1px;
+}
+.main .sidebar .currency .str3 div{
+    display: block;
+    width: 39px;
+    height: 19px;
+    background: #c7e9fa;
+    text-align: center;
+    color: #076e9f;
+    font-size: 10px;
+    line-height: 19px;
+    font-weight: 400;
+    font-family: 'Arial', sans-serif;
+}
+.main .sidebar .currency .str1 .str13{
+    background-image: url(../images/arrowsidebargreen.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+.main .sidebar .currency .str2 .str23{
+    background-image: url(../images/arrowsidebarred.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main .sidebar .currency .str3 .str33{
+    background-image: url(../images/arrowsidebargreen.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main .content{
+    width: 748px;
+    overflow: hidden;
+    position: absolute;
+    bottom: -648px;
+    left: 202px;
+    border-top: 2px solid #22aaec;
+    z-index: 1000;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 34px;
+    background: #fff;
+    margin-left: 30px;
+
+}
+.main .content .comeToPoznan{
+    display: block;
+    border-bottom: 1px dotted #d7d7d7;;
+    border-right: 1px dotted #d7d7d7;
+    padding-bottom: 49px;
+    padding-right: 49px;
+}
+.main .content .comeToPoznan h2{
+    color: #076e9f;
+    font-size: 32px;
+    font-family: 'League Gothic', sans-serif;
+    margin-left: 13px;
+}
+.main .content .comeToPoznan p{
+    display: block;
+    padding-left: 152px;
+    position: relative;
+    color: #5c5c5c;
+    font-size: 10px;
+    line-height: 21px;
+    font-weight: 400;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 30px;
+}
+.main .content .comeToPoznan .date{
+    display: block;
+    position: absolute;
+    top: 74px;
+    left: 0;
+    width: 26px;
+    height: 33px;
+    border-radius: 50%;
+    background: #22aaec;
+    text-align: center;
+    font-size: 8px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    padding-top: 19px;
+    padding-right: 13px;
+    padding-left: 13px;
+    line-height: 9px;
+    margin-left: 13px;
+}
+.main .content .comeToPoznan .user{
+    display: block;
+    position: absolute;
+    top: 76px;
+    left: 60px;
+    width: 52px;
+    height: 32px;
+    padding-top: 19px;
+    border-radius: 50%;
+    background-image: url(../images/user-male-icon.png);
+    margin-left: 13px;
+    font-size: 8px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    line-height: 9px;
+}
+.main .content .comeToPoznan .readMore{
+    display: block;
+    width: 70px;
+    padding: 7px 0;
+    border: 1px solid #045279;
+    border-radius: 1px;
+    text-align: center;
+    background: #0771a1;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    position: absolute;
+    left: 154px;
+    cursor: pointer;
+}
+.main .content .comeToPoznan .likCom{
+    position: absolute;
+    display: block;
+    width: 199px;
+    right: -10px;
+    z-index: 1000;
+}
+.main .content .comeToPoznan .likCom .likCom2{
+    display: block;
+    width: 179px;
+    padding: 5px 7px 6px 13px;
+    background: #90d4f5;
+    color: #076e9f;
+    font-family: 'Arial', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    position: relative;
+}
+.main .content .comeToPoznan .likCom .likCom2:after{
+    position: absolute;
+    content: '';
+    right: 10px;
+    bottom: -10px;
+    border: 5px solid transparent; 
+    border-left: 5px solid #076e9f; 
+    border-top: 5px solid #076e9f; 
+}
+.main .content .comeToPoznan .likCom .likCom2 span{
+    padding-left: 26px;
+    position: relative;
+}
+.main .content .comeToPoznan .likCom .likCom2 span:before{
+    position: absolute;
+    content: url('../images/thumb-up.png');
+    top: -2px;
+    left: 0;
+    cursor: pointer;
+}
+.main .content .comeToPoznan .likCom .likCom2 span:last-child{
+    margin-left: 15px;
+}
+.main .content .comeToPoznan .likCom .likCom2 span:last-child:before{
+    content: url('../images/speech-bubbles.png');
+    cursor: pointer;
+}
+.content .articles{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 30px;
+}
+.content .articles .NewAttractions{
+    display: inline-block;
+    width: 330px;
+    border-radius: 12px 0 0 0;
+    background: #eaeaea;
+    padding-top: 26px;
+    padding-left: 30px;
+    margin-top: 19px;
+    position: relative;
+    padding-bottom: 70px;
+}
+.content .articles .NewAttractions h4{
+    color: #076e9f;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: 'League Gothic', sans-serif; 
+}
+.content .articles .NewAttractions p{
+    color: #878787;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 14px;
+}
+.content .articles .NewAttractions p span{
+    color: #076e9f;
+}
+.content .articles .NewAttractions .text{
+    color: #5c5c5c;
+    line-height: 18px;
+}
+.content .articles .NewAttractions .more{
+    color: #076e9f;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+}
+.content .articles .NewAttractions .articlesBot{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-top: 7px;
+    padding-bottom: 9px;
+    background: #f4f3f3;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.content .articles .NewAttractions .articlesBot .articleLikes{
+    padding-left: 20px;
+    position: relative;
+}
+.content .articles .NewAttractions .articlesBot .articleLikes:before{
+    content: url(../images/thumb-up-kopia.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.content .articles .NewAttractions .articlesBot .articleComents{
+    display: block;
+    margin-right: 13px;
+    margin-left: 14px;
+    padding-left: 20px;
+    position: relative;
+}
+.content .articles .NewAttractions .articlesBot .articleComents:before{
+    content: url(../images/speech-bubbles-kopia.png);
+    position: absolute;
+    top: 2px;
+    left: 0;
+    cursor: pointer;
+}
+.content .articles .itWillBeFun{
+    display: inline-block;
+    width: 330px;
+    border-radius: 12px 0 0 0;
+    background: #eaeaea;
+    padding-top: 26px;
+    padding-left: 30px;
+    margin-top: 19px;
+    position: relative;
+}
+.content .articles .itWillBeFun h4{
+    color: #076e9f;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: 'League Gothic', sans-serif; 
+    width: 213px;
+}
+.content .articles .itWillBeFun p{
+    color: #878787;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 14px;
+    width: 310px;
+}
+.content .articles .itWillBeFun p span{
+    color: #076e9f;
+}
+.content .articles .itWillBeFun .text{
+    color: #5c5c5c;
+    line-height: 18px;
+}
+.content .articles .itWillBeFun .more{
+    color: #076e9f;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+}
+.content .articles .itWillBeFun .articlesBot{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-top: 7px;
+    padding-bottom: 9px;
+    background: #f4f3f3;
+    width: 340px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content .articles .itWillBeFun .articlesBot .articleLikes{
+    padding-left: 20px;
+    position: relative;
+}
+.content .articles .itWillBeFun .articlesBot .articleLikes:before{
+    content: url(../images/thumb-up-kopia.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.content .articles .itWillBeFun .articlesBot .articleComents{
+    display: block;
+    margin-right: 13px;
+    margin-left: 14px;
+    padding-left: 20px;
+    position: relative;
+}
+.content .articles .itWillBeFun .articlesBot .articleComents:before{
+    content: url(../images/speech-bubbles-kopia.png);
+    position: absolute;
+    top: 2px;
+    left: 0;
+    cursor: pointer;
+}
+.content .yourAdHere{
+    display: block;
+    width: 740px;
+    text-align: center;
+    background: #eaeaea;
+    margin-top: 29px;
+    margin-left: 30px;
+}
+.content .yourAdHere a{
+    display: block;
+    width: 740px;
+    height: 83px;
+    color: #636363;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 83px;
+}
+.map{
+    display: block;
+    width: 100%; 
+}
+.map h3{
+    padding-top: 18px;
+    color: #076e9f;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-family: 'League Gothic', sans-serif;
+    padding-left: 10px;
+    width: 960px;
+    margin: 0 auto 17px auto;
+    border-top: 1px dotted #d7d7d7;
+}
+.map iframe{
+    border-top: 1px solid #bfbfbf; 
+    border-bottom: 1px solid #bfbfbf; 
+}
+.footer{
+    display: block;
+    text-align: center;
+}
+.footer .footerNav{
+    display: block;
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    border-bottom: 1px solid #bfbfbf; 
+    height: 44px;
+}
+.footer .footerNav .footerlogo a{
+    background-image: url(../images/footer-logo.png);
+    width: 86px;
+    height: 13px;
+    position: absolute;
+    left: 8px;
+    top: 16px;
+}   
+.footer .footerNav .footernav2{
+    position: absolute;
+    top: 5px;
+    right: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .footerNav .footernav2 div{
+    display: block;
+    width: 64px;
+    height: 28px;
+    margin: 0 4px;
+}
+.footer .footerNav .footernav2 div:hover{
+    width: 62px;
+    background: #076e9f;
+    border-radius: 1px;
+    border: 1px solid #045279;
+    margin: 0 4px;
+}
+.footer .footerNav .footernav2 div a{
+    display: block;
+    width: 62px;
+    height: 28px;
+    color: #707070;
+    font-family: 'Arial', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 28px;
+}
+.footer .footerNav .footernav2 div a:hover{color: #fff;}
+.footer .rightsReserved{
+    color: #787878;
+    font-family: 'Arial', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 44px;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
