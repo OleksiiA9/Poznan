@@ -154,12 +154,13 @@ h6 {font: 16px sans-serif;}
     color: #fff;
 }
 .banner{
+    position: relative;
     display: block;
     background: url(../images/main-img.png) no-repeat center;
-    background-size:100% 100%;
-    padding: 91px 0;
-    position: relative;
-    border-bottom: 2px solid #22aaec;
+    background-size:100% 435px;
+    background-position: top;
+    padding: 91px 0 0 0;
+    z-index: 10;
 }
 .visitPoznan{
     display: block;
@@ -200,12 +201,11 @@ h6 {font: 16px sans-serif;}
 }
 .people{
     position: absolute;
-    bottom: 0;
     width: 100%;
-    background: #000;
-    padding: 25px 0;
+    padding: 21px 0;
     background: rgba(12, 11, 4, 0.3);
     color: #fff;
+    border-bottom: 2px solid #22aaec;
 }
 .people .wrappPeople{
     display: flex;
@@ -264,10 +264,11 @@ h6 {font: 16px sans-serif;}
 }
 .main{
     display: block;
-    overflow: hidden;
     width: 960px;
-    /*pos*/
     margin: 0 auto;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 114px;
 }
 .main .sidebar{
     display: block;
@@ -452,19 +453,15 @@ h6 {font: 16px sans-serif;}
     background-position: center;
 }
 .main .content{
-    width: 748px;
-    overflow: hidden;
+    width: 758px;
     position: absolute;
-    bottom: -648px;
+    bottom: 14px;
     left: 202px;
-    border-top: 2px solid #22aaec;
     z-index: 1000;
     padding-top: 30px;
-    padding-right: 10px;
     padding-bottom: 34px;
     background: #fff;
-    margin-left: 30px;
-
+    border-top: 2px solid #22aaec;
 }
 .main .content .comeToPoznan{
     display: block;
@@ -472,6 +469,9 @@ h6 {font: 16px sans-serif;}
     border-right: 1px dotted #d7d7d7;
     padding-bottom: 49px;
     padding-right: 49px;
+    border-top: 1px 2px solid #22aaec;
+    position: relative;
+    
 }
 .main .content .comeToPoznan h2{
     color: #076e9f;
@@ -565,7 +565,7 @@ h6 {font: 16px sans-serif;}
 .main .content .comeToPoznan .likCom .likCom2:after{
     position: absolute;
     content: '';
-    right: 10px;
+    right: 0px;
     bottom: -10px;
     border: 5px solid transparent; 
     border-left: 5px solid #076e9f; 
@@ -592,12 +592,11 @@ h6 {font: 16px sans-serif;}
 .content .articles{
     display: flex;
     justify-content: space-between;
-    width: 100%;
     padding-left: 30px;
 }
 .content .articles .NewAttractions{
     display: inline-block;
-    width: 330px;
+    width: 320px;
     border-radius: 12px 0 0 0;
     background: #eaeaea;
     padding-top: 26px;
@@ -671,7 +670,7 @@ h6 {font: 16px sans-serif;}
 }
 .content .articles .itWillBeFun{
     display: inline-block;
-    width: 330px;
+    width: 320px;
     border-radius: 12px 0 0 0;
     background: #eaeaea;
     padding-top: 26px;
@@ -691,7 +690,6 @@ h6 {font: 16px sans-serif;}
     font-size: 10px;
     font-weight: 400;
     font-family: 'Arial', sans-serif;
-    margin-bottom: 14px;
     width: 310px;
 }
 .content .articles .itWillBeFun p span{
@@ -715,8 +713,7 @@ h6 {font: 16px sans-serif;}
     padding-top: 7px;
     padding-bottom: 9px;
     background: #f4f3f3;
-    width: 340px;
-    margin-right: 20px;
+    width: 350px;
     display: flex;
     justify-content: flex-end;
 }
@@ -747,7 +744,7 @@ h6 {font: 16px sans-serif;}
 }
 .content .yourAdHere{
     display: block;
-    width: 740px;
+    width: 720px;
     text-align: center;
     background: #eaeaea;
     margin-top: 29px;
@@ -755,7 +752,7 @@ h6 {font: 16px sans-serif;}
 }
 .content .yourAdHere a{
     display: block;
-    width: 740px;
+    width: 720px;
     height: 83px;
     color: #636363;
     font-family: 'Arial', sans-serif;
